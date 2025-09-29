@@ -1,0 +1,27 @@
+{
+  "name": "personal_web",
+  "version": "1.0.0",
+  "description": "A modern, responsive personal website template designed for data science and art students. This template combines technical skills showcase with creative portfolio sections.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarrisonLiruiHuang/personal_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarrisonLiruiHuang/personal_web/issues"
+  },
+  "homepage": "https://github.com/HarrisonLiruiHuang/personal_web#readme",
+  "dependencies": {
+    "vite": "^6.0.5"
+  }
+}
