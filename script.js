@@ -43,6 +43,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Image Modal Functionality
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    
+    // Add click event to all research images
+    document.querySelectorAll('.research-project-image').forEach(function(img) {
+        img.addEventListener('click', function(e) {
+            // If the image is inside a link, don't open modal - let the link work
+            if (this.closest('a')) {
+                return; // Let the link handle the click
+            }
+            
+            // Otherwise, open the modal
+            e.preventDefault();
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+    });
+    
+    // Close modal when clicking the X
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            closeModal();
+        });
+    }
+    
+    // Close modal when clicking outside the image
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal && modal.style.display === 'block') {
+            closeModal();
+        }
+    });
+    
+    function closeModal() {
+        if (modal) {
+            modal.style.opacity = '0';
+            setTimeout(function() {
+                modal.style.display = 'none';
+                modal.style.opacity = '1';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+        }
+    }
+    
     // Simple smooth scrolling for anchor links (if any)
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
