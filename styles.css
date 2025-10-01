@@ -308,23 +308,23 @@ body {
     font-size: 1rem;
 }
 
-        .instagram-posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-            justify-items: center;
-        }
+.instagram-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    justify-items: center;
+}
 
-        .instagram-post {
-            width: 100%;
-            max-width: 400px;
-        }
+.instagram-post {
+    width: 100%;
+    max-width: 400px;
+}
 
-        .instagram-media {
-            width: 100% !important;
-            max-width: 400px !important;
-        }
+.instagram-media {
+    width: 100% !important;
+    max-width: 400px !important;
+}
 
 .art-post {
     background: #ffffff;
@@ -603,7 +603,7 @@ body {
     gap: 2rem;
 }
 
-.research-experiences-row > .research-project-card {
+.research-experiences-row>.research-project-card {
     flex: 1;
 }
 
@@ -737,92 +737,92 @@ body {
         gap: 1rem;
         text-align: center;
     }
-    
+
     .nav-brand {
         text-align: center;
     }
-    
+
     .nav-right {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .nav-menu {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .main-content {
         margin-top: 100px;
     }
-    
+
     .container {
         padding: 0 20px;
     }
-    
+
     .hero-content {
         flex-direction: row;
         text-align: left;
         gap: 1.5rem;
         align-items: flex-start;
     }
-    
+
     .avatar-placeholder {
         flex-shrink: 0;
         min-width: 80px;
     }
-    
+
     .avatar-image {
         width: 80px;
         height: auto;
     }
-    
+
     .hero-text h1 {
         font-size: 2rem;
         text-align: left;
     }
-    
+
     .subtitle,
     .description {
         text-align: left;
         font-size: 0.9rem;
     }
-    
+
     .hero-contact-inline {
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .art-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    
+
     .instagram-posts-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .instagram-post {
         max-width: 100%;
     }
-    
+
     .coursework-columns {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 0 20px;
     }
-    
+
     .contact-content {
         padding: 0 20px;
     }
-    
+
     .contact-info {
         grid-template-columns: 1fr;
     }
@@ -833,69 +833,69 @@ body {
         padding: 0.8rem 15px;
         text-align: center;
     }
-    
+
     .nav-brand {
         text-align: center;
     }
-    
+
     .nav-right {
         gap: 0.8rem;
     }
-    
+
     .nav-menu {
         gap: 0.8rem;
         justify-content: center;
     }
-    
+
     .nav-link {
         font-size: 1rem;
     }
-    
+
     .main-content {
         margin-top: 100px;
     }
-    
+
     .container {
         padding: 0 15px;
     }
-    
+
     .coursework-columns {
         padding: 0 15px;
     }
-    
+
     .contact-content {
         padding: 0 15px;
     }
-    
+
     .hero-text h1 {
         font-size: 1.8rem;
     }
-    
+
     .avatar-image {
         width: 60px;
     }
-    
+
     .hero-content {
         gap: 1rem;
         flex-direction: row;
         align-items: flex-start;
     }
-    
+
     .subtitle,
     .description {
         font-size: 0.85rem;
     }
-    
+
     .hero-contact-inline {
         font-size: 0.75rem;
         margin-bottom: 0.8rem;
     }
-    
+
     .coursework-section h2,
     .contact-section h2 {
         font-size: 2rem;
     }
-    
+
     .project-card,
     .contact-item {
         padding: 1.5rem;
@@ -966,15 +966,15 @@ body {
         font-size: 2rem;
         padding: 0 20px 1rem 20px;
     }
-    
+
     .art-subtitle {
         padding: 0 20px;
     }
-    
+
     .art-content {
         padding: 0 20px;
     }
-    
+
     .instagram-posts-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -985,11 +985,11 @@ body {
     .art-content {
         padding: 0 15px;
     }
-    
+
     .art-section h2 {
         padding: 0 15px 1rem 15px;
     }
-    
+
     .art-subtitle {
         padding: 0 15px;
     }
@@ -1525,35 +1525,35 @@ body {
     .research-content {
         padding: 0 20px;
     }
-    
+
     .research-section h2 {
         font-size: 2rem;
     }
-    
+
     .research-experiences-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .research-project-card {
         flex-direction: column;
         gap: 1.5rem;
         padding: 1.5rem;
     }
-    
+
     .research-image {
         width: 100%;
         height: 120px;
         align-self: center;
     }
-    
+
     .publication-image {
         width: 100%;
         height: 100px;
         margin-right: 0;
         margin-bottom: 1rem;
     }
-    
+
     .research-methods {
         justify-content: center;
     }
@@ -1563,29 +1563,608 @@ body {
     .research-content {
         padding: 0 15px;
     }
-    
+
     .research-section h2 {
         font-size: 1.8rem;
     }
-    
+
     .research-project-card {
         padding: 1rem;
         gap: 1rem;
     }
-    
+
     .research-image {
         height: 100px;
     }
-    
+
     .placeholder-icon {
         font-size: 2rem;
     }
-    
+
     .placeholder-text {
         font-size: 0.8rem;
     }
-    
+
     .research-project-card h4 {
         font-size: 1.1rem;
     }
+}
+
+/* Simple Art Grid */
+.simple-art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.simple-art-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.simple-art-grid img:hover {
+    opacity: 0.8;
+}
+
+.art-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.art-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.art-image-container {
+    height: 250px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.art-placeholder {
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+}
+
+.art-placeholder.large {
+    font-size: 1.2rem;
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.placeholder-text {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.art-info {
+    padding: 1.5rem;
+}
+
+.art-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.art-info p {
+    color: #666666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Full-Screen Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image-container img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 500px;
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 1);
+    padding: 0px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+}
+
+.image-caption:hover {
+    opacity: 1;
+}
+
+/* Show caption when hovering over bottom left area or caption itself */
+.modal-image-container .hover-zone {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 150px;
+    z-index: 1999;
+}
+
+.hover-zone:hover~.image-caption,
+.image-caption:hover {
+    opacity: 1;
+}
+
+.image-caption.show-briefly {
+    opacity: 1;
+}
+
+.image-caption h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.image-caption p {
+    margin: 0 0 3px 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2001;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.modal-artwork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.modal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image .art-placeholder {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image .placeholder-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.modal-image .placeholder-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modal-details {
+    text-align: left;
+    padding: 1rem;
+}
+
+.modal-details h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.artwork-meta {
+    margin-bottom: 1.5rem;
+}
+
+.artwork-meta p {
+    margin-bottom: 0.5rem;
+    color: #666666;
+    font-size: 1rem;
+}
+
+.artwork-description {
+    margin-bottom: 2rem;
+}
+
+.artwork-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0;
+}
+
+.techniques h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.technique-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technique-tag {
+    background: #f5f5f5;
+    color: #333333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #cccccc;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+/* Responsive Design for Art Gallery */
+@media (max-width: 768px) {
+    .art-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .modal-artwork {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .modal-content {
+        width: 98%;
+        padding: 15px;
+    }
+
+    .modal-image .art-placeholder {
+        height: 250px;
+    }
+
+    .modal-image .placeholder-icon {
+        font-size: 3rem;
+    }
+
+    .modal-details h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .art-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .art-image-container {
+        height: 200px;
+    }
+
+    .placeholder-icon {
+        font-size: 2.5rem;
+    }
+
+    .placeholder-text {
+        font-size: 0.9rem;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .modal-image .art-placeholder {
+        height: 200px;
+    }
+
+    .modal-image .placeholder-icon {
+        font-size: 2.5rem;
+    }
+
+    .technique-tags {
+        justify-content: center;
+    }
+}
+
+/* Updated Art Gallery Grid - Simple 3x3 Layout */
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.art-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    aspect-ratio: 1;
+}
+
+.art-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.art-image-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.art-placeholder {
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+}
+
+.placeholder-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.placeholder-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Remove the art-info section for cleaner look */
+.art-info {
+    display: none;
+}
+
+/* Responsive Design for 3x3 Grid */
+@media (max-width: 768px) {
+    .art-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .art-gallery {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+
+    .placeholder-icon {
+        font-size: 2rem;
+    }
+
+    .placeholder-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* Placeholder Images for Art Gallery */
+.art-image-container {
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.art-placeholder {
+    text-align: center;
+    color: #999999;
+    opacity: 0.8;
+}
+
+.placeholder-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #cccccc;
+}
+
+.placeholder-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999999;
+}
+
+/* Different background colors for each artwork */
+.art-item:nth-child(1) .art-image-container {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.art-item:nth-child(2) .art-image-container {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.art-item:nth-child(3) .art-image-container {
+    background: linear-gradient(135deg, #45b7d1, #96c93d);
+}
+
+.art-item:nth-child(4) .art-image-container {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.art-item:nth-child(5) .art-image-container {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.art-item:nth-child(6) .art-image-container {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.art-item:nth-child(7) .art-image-container {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+}
+
+.art-item:nth-child(8) .art-image-container {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
+
+.art-item:nth-child(9) .art-image-container {
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+
+/* Hover effects */
+.art-item:hover .art-image-container {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.art-item:hover .placeholder-icon {
+    color: #ffffff;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.art-item:hover .placeholder-text {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Art Tags */
+.art-tags {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.art-tag {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333333;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.art-item:hover .art-tag {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+/* Ensure art-item has relative positioning for absolute tags */
+.art-item {
+    position: relative;
 }
