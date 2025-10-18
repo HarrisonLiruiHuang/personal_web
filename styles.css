@@ -108,6 +108,19 @@ body {
     padding: 0;
 }
 
+/* Add space on top of main content sections */
+.hero,
+.art-section,
+.projects-section,
+.about-content {
+    margin-top: 8rem !important;
+}
+
+.research-section,
+.coursework-section {
+    margin-top: 15rem !important;
+}
+
 /* Home Page */
 .hero {
     padding: 6rem 0;
@@ -1925,6 +1938,152 @@ body {
 
     .modal-details h2 {
         font-size: 1.5rem;
+    }
+
+    /* Mobile caption responsive width */
+    .image-caption {
+        width: calc(100vw / 20);
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .modal-image-container .hover-zone {
+        width: calc(100vw / 20 + 50px);
+        height: 100px;
+    }
+
+    /* Mobile - center everything with 0 padding */
+    .container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .art-content {
+        padding: 0;
+        text-align: center;
+    }
+
+    .research-content {
+        padding: 0;
+        text-align: center;
+    }
+
+    .research-section {
+        padding: 0;
+        text-align: center;
+    }
+
+    .research-intro {
+        padding: 0;
+        text-align: center;
+    }
+
+    .research-experiences {
+        padding: 0;
+        text-align: center;
+    }
+
+    .research-publications,
+    .research-collaborations {
+        text-align: center;
+    }
+
+    .research-project-card {
+        text-align: center;
+    }
+
+    .research-project-card p {
+        text-align: center;
+    }
+
+    /* Research page text size - 70% of original */
+    .research-section h2 {
+        font-size: calc(2.2rem * 0.7);
+    }
+
+    .research-subtitle {
+        font-size: calc(1.2rem * 0.7);
+    }
+
+    .research-intro p {
+        font-size: calc(1.2rem * 0.7);
+    }
+
+    .research-experiences h3,
+    .research-publications h3,
+    .research-collaborations h3 {
+        font-size: calc(1.4rem * 0.7);
+    }
+
+    .research-project-card h4 {
+        font-size: calc(1.3rem * 0.7);
+    }
+
+    .research-project-card p {
+        font-size: calc(1.1rem * 0.7);
+    }
+
+    .research-period {
+        font-size: calc(1rem * 0.7);
+    }
+
+    .research-publications h4 {
+        font-size: calc(1.1rem * 0.7);
+    }
+
+    .research-publications h5 {
+        font-size: calc(1rem * 0.7);
+    }
+
+    .publication-content p {
+        font-size: calc(0.95rem * 0.7);
+    }
+
+    .research-collaborations p {
+        font-size: calc(1.1rem * 0.7);
+    }
+
+    /* Coursework page - prevent content overflow */
+    .coursework-section {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .coursework-columns {
+        padding: 0;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .coursework-column {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .coursework-topic {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .coursework-item {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem 0;
+        margin: 0;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
     }
 }
 
