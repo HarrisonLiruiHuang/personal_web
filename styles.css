@@ -109,17 +109,6 @@ body {
 }
 
 /* Add space on top of main content sections */
-.hero,
-.art-section,
-.projects-section,
-.about-content {
-    margin-top: 8rem !important;
-}
-
-.research-section,
-.coursework-section {
-    margin-top: 15rem !important;
-}
 
 /* Home Page */
 .hero {
@@ -842,6 +831,19 @@ body {
 }
 
 @media (max-width: 480px) {
+
+    .hero,
+    .art-section,
+    .projects-section,
+    .about-content {
+        margin-top: 8rem !important;
+    }
+
+    .research-section,
+    .coursework-section {
+        margin-top: 15rem !important;
+    }
+
     .nav-container {
         padding: 0.8rem 15px;
         text-align: center;
