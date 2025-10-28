@@ -994,6 +994,34 @@ body {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+    /* Responsive grid for art gallery */
+    .simple-art-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        grid-auto-flow: row dense;
+    }
+
+    /* Adjust artwork sizes for mobile */
+    .artwork-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .artwork-wide {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .artwork-largewide {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .artwork-tall {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1007,6 +1035,23 @@ body {
 
     .art-subtitle {
         padding: 0 15px;
+    }
+
+    /* Single column for mobile */
+    .simple-art-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+        grid-auto-flow: row dense;
+        gap: 20px;
+    }
+
+    /* Reset all artwork sizes to single column on mobile */
+    .artwork-large,
+    .artwork-wide,
+    .artwork-tall,
+    .artwork-largewide {
+        grid-column: span 1;
+        grid-row: span 1;
     }
 }
 
@@ -1608,20 +1653,69 @@ body {
 /* Simple Art Grid */
 .simple-art-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    grid-auto-flow: row dense;
     gap: 30px;
     margin-top: 2rem;
 }
 
-.simple-art-grid img {
-    width: 100%;
-    height: auto;
+/* Artwork item container */
+.artwork-item {
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.artwork-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom artwork sizing classes */
+.artwork-small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.artwork-medium {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.artwork-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.artwork-wide {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.artwork-tall {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.artwork-largewide {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.simple-art-grid img,
+.simple-art-grid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: opacity 0.3s ease;
 }
 
-.simple-art-grid img:hover {
-    opacity: 0.8;
+.artwork-item:hover img,
+.artwork-item:hover video {
+    opacity: 0.9;
 }
 
 .art-item {
