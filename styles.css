@@ -1321,14 +1321,14 @@ body {
 /* Publication Title */
 .research-publications h5 {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
     text-align: left;
 }
 
 /* Publication Layout (nested research-project-card) */
 .research-publications .research-project-card {
-    margin-bottom: 2rem;
-    gap: 1.5rem;
+    margin-bottom: 0rem;
+    gap: 1rem;
 }
 
 /* Publication Image - Clickable */
