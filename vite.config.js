@@ -15,7 +15,7 @@ export default defineConfig({
       interval: 1000
     }
   },
-
+  
   // Build configuration
   build: {
     outDir: 'dist',
@@ -30,12 +30,12 @@ export default defineConfig({
       }
     }
   },
-
+  
   // CSS configuration
   css: {
     devSourcemap: true
   },
-
+  
   // Asset handling
   assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.webp']
 })
