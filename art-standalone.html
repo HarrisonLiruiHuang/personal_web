@@ -4,47 +4,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art - Harrison Huang</title>
+    <title>Art — gallery</title>
     <link rel="icon" type="image/x-icon" href="images/头像吃东西.jpg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .standalone-bio {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 3rem;
+            align-items: start;
+            padding: 0 40px 4rem;
+            border-bottom: 1px solid #cccccc;
+            margin-bottom: 3rem;
+        }
+
+        .standalone-bio-image {
+            width: 180px;
+            height: auto;
+            display: block;
+        }
+
+        .standalone-bio h1 {
+            font-size: 3rem;
+            font-weight: normal;
+            line-height: 1.15;
+            color: #333333;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .standalone-bio .subtitle {
+            margin-bottom: 1.5rem;
+        }
+
+        .standalone-bio-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 1.75rem;
+            color: #333333;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .standalone-bio-contact a {
+            color: #333333;
+            text-decoration: underline;
+        }
+
+        .standalone-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .standalone-links a {
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            font-size: 1rem;
+            line-height: 1.4;
+            padding-bottom: 0.15rem;
+            text-decoration: none;
+        }
+
+        .standalone-links a:hover {
+            border-bottom-color: transparent;
+        }
+
+        .standalone-bio p {
+            font-size: 1.1rem;
+            line-height: 1.75;
+            margin-bottom: 1.25rem;
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            .standalone-bio {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0 20px 3rem;
+            }
+
+            .standalone-bio-image {
+                width: 150px;
+            }
+
+            .standalone-bio h1 {
+                font-size: 2.4rem;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .standalone-bio {
+                padding: 0 15px 2.5rem;
+            }
+
+            .standalone-bio h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <h1><a href="about.html" class="nav-brand-link">Harrison Huang</a></h1>
-            </div>
-            <div class="nav-right">
-                <div class="nav-contact">
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="research.html" class="nav-link">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="art.html" class="nav-link">Art</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="coursework.html" class="nav-link">Coursework</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Main Content -->
     <main class="main-content">
         <div class="container">
             <div class="art-section">
+                <section class="standalone-bio" aria-labelledby="bio-title">
+                    <img src="images/头像吃东西.jpg" alt="Harrison Huang" class="standalone-bio-image">
+                    <div>
+                        <h1 id="bio-title">Harrison Huang</h1>
+                        <p class="subtitle">UC Berkeley Art & Data Science</p>
+                        <div class="standalone-bio-contact">
+                            <span>Email: harrisonliruihuang { a t } berkeley.edu</span>
+                        </div>
+                        <div class="standalone-links" aria-label="Artist documents">
+                            <a href="Artist%20Statement%20-%20Harrison%20Huang.pdf">Artist statement</a>
+                            <a href="Artist%20Resume.pdf">Artist resume</a>
+                        </div>
+                        <p>
+                            Welcome to my personal website. I am a final-year undergraduate student at UC Berkeley.
+                        </p>
+
+                        <p>
+                            I was born in Hainan, an island in the southernmost part of China, where I spent many of my
+                            childhood summers drinking coconut water. At 14, I moved to the U.S. and spent my teenage
+                            years in Irvine, California.
+                        </p>
+
+                        <p>
+                            Before Berkeley, I was a self-taught artist and had never received formal art training.
+                            I had always enjoyed doodling as a hobby, but it was at Berkeley that I found my deeper
+                            passion for art and decided to add Art Practice as my major.
+                        </p>
+
+                        <p>
+                            The main themes in my work include childish dreams, the tension between lasting moments
+                            and fading time, and the interplay between the digital and physical worlds.
+                            Through art, I chase the dreams I was not able to follow as a child, wandering through
+                            this world with a heart that still dreams.
+                        </p>
+
+                    </div>
+                </section>
                 <div class="art-content">
                     <!-- Simple Art Grid -->
                     <div class="simple-art-grid" id="artGrid">
@@ -315,8 +421,6 @@
         // Generate grid when page loads
         document.addEventListener('DOMContentLoaded', generateGrid);
     </script>
-    <p style="text-align: center; font-size: 0.8rem; margin: 2rem 0 1.5rem; opacity: 0.7;"><a
-            href="art-standalone.html">:P</a></p>
 </body>
 
 </html>
