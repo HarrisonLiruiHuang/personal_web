@@ -15,7 +15,6 @@
             gap: 3rem;
             align-items: start;
             padding: 0 40px 4rem;
-            border-bottom: 1px solid #cccccc;
             margin-bottom: 3rem;
         }
 
@@ -106,6 +105,15 @@
                 font-size: 2rem;
             }
         }
+
+        .gallery-section {
+            margin-bottom: 4rem;
+        }
+
+        .gallery-section:last-child {
+            margin-bottom: 0;
+        }
+
     </style>
 </head>
 
@@ -151,12 +159,38 @@
 
                     </div>
                 </section>
-                <div class="art-content">
-                    <!-- Simple Art Grid -->
-                    <div class="simple-art-grid" id="artGrid">
-                        <!-- Grid will be populated by JavaScript -->
+                <section class="gallery-section exhibition-section" aria-labelledby="exhibition-title">
+                    <h2 id="exhibition-title">Exhibition</h2>
+                    <div class="art-content">
+                        <div class="art-description">
+                            <p>
+                                Sitting in Memories Berkeley, CA<br>
+                                Senior Group Exhibition - Water Marks April 30 - May 19, 2026<br>
+                                2D animation projections and installation 8’ x 8’ x 8’<br>
+                                Art 185: Senior Project, 2026
+                            </p>
+                            <p>
+                                Sitting in Memories explores memory as an immersive space rather than a fixed record.
+                                Inspired by large-scale digital installations, it uses abstract motion, color, light,
+                                and
+                                rhythm to evoke the feeling of remembering, inviting viewers to project their own
+                                experiences.
+                            </p>
+                        </div>
+                        <div class="simple-art-grid" id="exhibitionGrid">
+                            <!-- Grid will be populated by JavaScript -->
+                        </div>
                     </div>
-                </div>
+                </section>
+                <section class="gallery-section" aria-labelledby="artworks-title">
+                    <h2 id="artworks-title">Artworks</h2>
+                    <div class="art-content">
+                        <!-- Simple Art Grid -->
+                        <div class="simple-art-grid" id="artGrid">
+                            <!-- Grid will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -180,6 +214,34 @@
 
     <script src="script.js"></script>
     <script>
+        const exhibitionArtworks = [
+            {
+                id: 'exhibition1', src: 'images/IMG_2360.JPG', title: "Exhibition",
+                description: "", medium: "Exhibition", year: "2026",
+                size: "large"
+            },
+            {
+                id: 'exhibition2', src: 'images/IMG_2362.JPG', title: "Exhibition",
+                description: "", medium: "Exhibition", year: "2026",
+                size: "medium"
+            },
+            {
+                id: 'exhibition3', src: 'images/IMG_3182.JPG', title: "Exhibition",
+                description: "", medium: "Exhibition", year: "2026",
+                size: "medium"
+            },
+            {
+                id: 'exhibition4', src: 'images/IMG_3183.mov', type: 'video', title: "Exhibition",
+                description: "", medium: "Exhibition", year: "2026",
+                size: "large"
+            },
+            {
+                id: 'exhibition5', src: 'images/IMG_3243.MOV', type: 'video', title: "Exhibition",
+                description: "", medium: "Exhibition", year: "2026",
+                size: "wide"
+            },
+        ];
+
         const artworks = [
             {
                 id: 'artwork10', src: 'images/river.jpg', title: "Follow the current",
@@ -306,14 +368,15 @@
 
         ];
 
+        const allArtworks = [...exhibitionArtworks, ...artworks];
         let currentImageIndex = 0;
 
         // Generate grid from artwork data
-        function generateGrid() {
-            const grid = document.getElementById('artGrid');
+        function generateGrid(galleryArtworks, gridId) {
+            const grid = document.getElementById(gridId);
             grid.innerHTML = '';
 
-            artworks.forEach((artwork, index) => {
+            galleryArtworks.forEach((artwork, index) => {
                 // Create container div for each artwork
                 const container = document.createElement('div');
                 container.className = `artwork-item ${artwork.size ? 'artwork-' + artwork.size : 'artwork-medium'}`;
@@ -345,13 +408,13 @@
         }
 
         function openModal(artworkId) {
-            currentImageIndex = artworks.findIndex(artwork => artwork.id === artworkId);
+            currentImageIndex = allArtworks.findIndex(artwork => artwork.id === artworkId);
             showImage(currentImageIndex);
             document.getElementById('artModal').style.display = "block";
         }
 
         function showImage(index) {
-            const artwork = artworks[index];
+            const artwork = allArtworks[index];
             const modalImage = document.getElementById('modalImage');
             const modalVideo = document.getElementById('modalVideo');
             const caption = document.querySelector('.image-caption');
@@ -389,12 +452,12 @@
         }
 
         function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % artworks.length;
+            currentImageIndex = (currentImageIndex + 1) % allArtworks.length;
             showImage(currentImageIndex);
         }
 
         function previousImage() {
-            currentImageIndex = (currentImageIndex - 1 + artworks.length) % artworks.length;
+            currentImageIndex = (currentImageIndex - 1 + allArtworks.length) % allArtworks.length;
             showImage(currentImageIndex);
         }
 
@@ -419,7 +482,10 @@
         }
 
         // Generate grid when page loads
-        document.addEventListener('DOMContentLoaded', generateGrid);
+        document.addEventListener('DOMContentLoaded', function () {
+            generateGrid(exhibitionArtworks, 'exhibitionGrid');
+            generateGrid(artworks, 'artGrid');
+        });
     </script>
 </body>
 
